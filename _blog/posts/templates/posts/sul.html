@@ -27,16 +27,6 @@
         .regioes a {
         font-size: 15px;
         }
-        .blog-post {
-        width: 33%;
-        text-align: left;
-        }
-        .blog-post-meta {
-        color: #808080;
-        }
-        .image {
-        width: 300px
-        }
     </style>
 </head>
 <body>
@@ -55,16 +45,4 @@
         </nav>
             </div>
         </div>
-<div class="posts-div d-flex justify-content-between">
-    {%for post in posts%}
-    <div class="blog-post">
-        <h1 class="blog-post-title">{{post.titulo}}</h1>
-        <p class="blog-post-meta">{{post.postado_em}} por
-        <a class="autor text-dark" href="#">{{post.autor}}</a>
-        </p>
-        <img class="image" src="{{post.imagem}}">
-        <p class="blog-post-description">{{post.descricao}}</p>
-    </div>
-    {%endfor%}
-</div>
 </body>
