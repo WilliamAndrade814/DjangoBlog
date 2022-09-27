@@ -19,6 +19,10 @@ class Post(models.Model):
     postado_em = models.DateTimeField(default=timezone.now)
     autor = models.ForeignKey(User, on_delete=models.DO_NOTHING)
     conteudo = models.TextField(default='')
+    area = models.TextField(default='')
+    populacao = models.TextField(default='')
+    capital = models.TextField(default='')
+
 
     def __str__(self):
         return self.titulo
